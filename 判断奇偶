@@ -1,0 +1,20 @@
+#include<stdio.h>
+int arr[1000],i,j,counter=0;
+int main()
+{
+	printf("请输入数组的个数：");
+	scanf("%d",&j);
+	printf("请输入数组的元素：\n");
+	for(i=0;i<j;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<j;i++)
+	{
+		if(arr[i]%2==1){counter++;}
+		else{counter=0;}
+		if(counter==3)break;
+	
+	}if(counter==3)printf("true");
+	if(counter!=3)printf("fause");
+ } 
